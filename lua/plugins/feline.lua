@@ -97,7 +97,7 @@ properties.force_inactive.buftypes = {
 
 -- vi-mode
 components.left.active[1] = {
-  provider = ' NV-IDE ',
+  provider = ' IDE ',
   hl = function()
     local val = {}
 
@@ -301,18 +301,18 @@ components.right.active[5] = {
   right_sep = ' '
 }
 -- rubyVersion
-components.right.active[6] = {
-  provider = function()
-    return ' '
-    -- ..vim.fn['rvm#string']()
-  end,
-  hl = {
-    fg = 'red',
-    bg = 'bg',
-    style = 'bold'
-  },
-  right_sep = ' '
-}
+-- components.right.active[6] = {
+--   provider = function()
+--     return ' '
+--     -- .. vim.fn['rvm#statusline']()
+--   end,
+--   hl = {
+--     fg = 'red',
+--     bg = 'bg',
+--     style = 'bold'
+--   },
+--   right_sep = ' '
+-- }
 -- lineInfo
 components.right.active[7] = {
   provider = 'position',

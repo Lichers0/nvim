@@ -137,11 +137,12 @@ return require('packer').startup(function(use)
 
   use 'simrat39/symbols-outline.nvim' -- methods tree + params windows
   use 'szw/vim-maximizer' -- :MaximizerToggle
-  use 'vim-ruby/vim-ruby'
+  -- use 'vim-ruby/vim-ruby'
   use 'easymotion/vim-easymotion'
   -- use 'machakann/vim-sandwich' -- analog vim-surround
   use 'rstacruz/vim-closer' -- Closes brackets. Perfect companion to vim-endwise. Basically, a more conservative version of auto-pairs that only works when you press Enter.
   use 'folke/which-key.nvim'
+  use 'lazytanuki/nvim-mapper'
 
   -- lua development
   use 'bfredl/nvim-luadev' -- environment for developing

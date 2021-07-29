@@ -20,7 +20,11 @@ require'lspconfig'.tsserver.setup{
 require'lspconfig'.solargraph.setup{
   capabilities = capabilities,
 }
-require'lspconfig'.vuels.setup{}
+nvim_lsp.vuels.setup{
+  on_attach = function(client)
+    client.resolved_capabilities.document_formatting = true
+  end;
+}
 require'lspconfig'.cssls.setup{
   capabilities = capabilities,
 }
