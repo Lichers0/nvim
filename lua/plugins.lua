@@ -29,7 +29,7 @@ return require('packer').startup(function(use)
   use 'tzachar/compe-tabnine'
   use 'SirVer/ultisnips'
   use 'honza/vim-snippets'
-  use 'windwp/nvim-autopairs'
+  -- use 'windwp/nvim-autopairs'
   use 'AndrewRadev/tagalong.vim'
   use 'andymass/vim-matchup'
 
@@ -41,6 +41,7 @@ return require('packer').startup(function(use)
   use 'romgrk/nvim-treesitter-context'
   -- My
   use 'nvim-treesitter/playground'
+  -- use 'nvim-treesitter/nvim-treesitter-textobjects' -- own blocks for commnd (ruby)
 
   -- Syntax
   use 'moll/vim-node'
@@ -48,7 +49,7 @@ return require('packer').startup(function(use)
   use 'editorconfig/editorconfig-vim'
   use 'chrisbra/csv.vim'
   use 'npxbr/glow.nvim'
-  use 'junegunn/vim-easy-align'
+  use 'junegunn/vim-easy-align' -- A simple, easy-to-use Vim alignment plugin
 
   -- Icons
   use 'kyazdani42/nvim-web-devicons'
@@ -95,6 +96,7 @@ return require('packer').startup(function(use)
   use 'karb94/neoscroll.nvim'
   use 'dstein64/nvim-scrollview'
   use 'chaoren/vim-wordmotion'
+  use 'michaeljsmith/vim-indent-object'
 
   -- Tim Pope docet
   use 'tpope/vim-sensible'
@@ -137,4 +139,10 @@ return require('packer').startup(function(use)
   use 'szw/vim-maximizer' -- :MaximizerToggle
   use 'vim-ruby/vim-ruby'
   use 'easymotion/vim-easymotion'
+  -- use 'machakann/vim-sandwich' -- analog vim-surround
+  use 'rstacruz/vim-closer' -- Closes brackets. Perfect companion to vim-endwise. Basically, a more conservative version of auto-pairs that only works when you press Enter.
+  use 'folke/which-key.nvim'
+
+  -- lua development
+  use 'bfredl/nvim-luadev' -- environment for developing
 end)

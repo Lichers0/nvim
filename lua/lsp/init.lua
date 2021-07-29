@@ -20,6 +20,7 @@ require'lspconfig'.tsserver.setup{
 require'lspconfig'.solargraph.setup{
   capabilities = capabilities,
 }
+require'lspconfig'.vuels.setup{}
 require'lspconfig'.cssls.setup{
   capabilities = capabilities,
 }
