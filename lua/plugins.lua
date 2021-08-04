@@ -143,6 +143,8 @@ return require('packer').startup(function(use)
   use 'rstacruz/vim-closer' -- Closes brackets. Perfect companion to vim-endwise. Basically, a more conservative version of auto-pairs that only works when you press Enter.
   use 'folke/which-key.nvim'
   use 'lazytanuki/nvim-mapper'
+  use 'vim-test/vim-test' -- test runner
+  use 'preservim/vimux' -- terminal(tmux) for test runner
 
   -- lua development
   use 'bfredl/nvim-luadev' -- environment for developing

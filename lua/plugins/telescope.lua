@@ -2,13 +2,20 @@ local actions = require('telescope.actions')
 require('telescope').setup{
   defaults = {
     prompt_prefix = "λ -> ",
-    selection_caret = "|> ",
+    selection_caret = "> ",
     -- Don't pass to normal mode with ESC, problem with telescope-project
     -- mappings = {
     --   i = {
     --     ["<esc>"] = actions.close,
     --   },
     -- },
+    mappings = {
+      i = {
+        ["<C-j>"]   = actions.move_selection_next,
+        ["<C-k>"]   = actions.move_selection_previous,
+        ["<ESC>"]   = actions.close,
+      },
+    },
   },
   extensions = {
     fzy_native = {

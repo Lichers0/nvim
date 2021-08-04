@@ -34,5 +34,7 @@ require('plugins.neoscroll')
 require('plugins.minimap')
 require('plugins.diffview')
 require('plugins.todo-comments')
+require('plugins.nvim-web-devicons')
+require('plugins.vim-test')
 -- Keymap
 require('settings.keymap')
