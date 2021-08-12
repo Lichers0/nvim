@@ -1,3 +1,4 @@
+vim.opt.shell = '/bin/bash'
 -- Global
 vim.opt.fillchars = { vert = ' ' }
 vim.opt.showtabline = 2

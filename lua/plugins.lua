@@ -29,7 +29,7 @@ return require('packer').startup(function(use)
   use 'tzachar/compe-tabnine'
   use 'SirVer/ultisnips'
   use 'honza/vim-snippets'
-  -- use 'windwp/nvim-autopairs'
+  use 'windwp/nvim-autopairs'
   use 'AndrewRadev/tagalong.vim'
   use 'andymass/vim-matchup'
 
@@ -137,15 +137,21 @@ return require('packer').startup(function(use)
 
   use 'simrat39/symbols-outline.nvim' -- methods tree + params windows
   use 'szw/vim-maximizer' -- :MaximizerToggle
-  -- use 'vim-ruby/vim-ruby'
+  use 'vim-ruby/vim-ruby'
+  use 'slim-template/vim-slim'
   use 'easymotion/vim-easymotion'
   -- use 'machakann/vim-sandwich' -- analog vim-surround
-  use 'rstacruz/vim-closer' -- Closes brackets. Perfect companion to vim-endwise. Basically, a more conservative version of auto-pairs that only works when you press Enter.
+  -- use 'rstacruz/vim-closer' -- Closes brackets. Perfect companion to vim-endwise. Basically, a more conservative version of auto-pairs that only works when you press Enter.
   use 'folke/which-key.nvim'
   use 'lazytanuki/nvim-mapper'
+
+  -- Test tools
   use 'vim-test/vim-test' -- test runner
+  use { "rcarriga/vim-ultest", requires = {"vim-test/vim-test"}, run = ":UpdateRemotePlugins" } -- rcarriga/dotfiles
   use 'preservim/vimux' -- terminal(tmux) for test runner
 
   -- lua development
   use 'bfredl/nvim-luadev' -- environment for developing
+  -- Dooker
+  use 'kkvh/vim-docker-tools'
 end)
