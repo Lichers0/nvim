@@ -154,4 +154,6 @@ return require('packer').startup(function(use)
   use 'bfredl/nvim-luadev' -- environment for developing
   -- Dooker
   use 'kkvh/vim-docker-tools'
+  -- Quokka realtime debug buffer
+  use 'metakirby5/codi.vim'
 end)
