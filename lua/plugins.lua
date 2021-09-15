@@ -156,4 +156,6 @@ return require('packer').startup(function(use)
   use 'kkvh/vim-docker-tools'
   -- Quokka realtime debug buffer
   use 'metakirby5/codi.vim'
+  -- Fuzzy in :e :s
+  use 'gelguy/wilder.nvim'
 end)
